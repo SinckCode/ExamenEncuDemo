@@ -1,0 +1,237 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    text-align: center;
+    background: white;
+  }
+  
+  .header h1 {
+    font-size: 50px;
+  }
+  
+  /* Style the top navigation bar */
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  /* Style the topnav links */
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change color on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    background-color: #f1f1f1;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    
+  }
+
+  .card2 {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    position: relative;
+    right: -12rem;
+  }
+  
+  
+  /* Clear floats after the columns */
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+    margin-top: 20px;
+  }
+
+  .examen{
+    position: relative;
+    left: 5rem;
+    top: 6rem;
+    z-index: 1;
+}
+
+h1 { 
+	position: relative; 
+	float: left;
+	background: rgb(0, 0, 0);
+	color: #fff;
+	font-size: 2.5em;
+}
+
+h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background: rgb(255, 255, 255);
+    border-left: 1px solid #000;
+    animation: escribir 5s steps(30) infinite alternate;
+
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
+
+.Angel{
+    position: relative;
+    top: -2rem;
+    left: 60rem;
+    z-index: 1;
+    height: fit-content;
+    width: fit-content;
+}
+
+.David{
+    position: relative;
+    top: -2rem;
+    left: 63.5em;
+    z-index: 1;
+    height: fit-content;
+    width: fit-content;
+}
+
+.Onesto{
+    position: relative;
+    top: -2rem;
+    left: 67rem;
+    z-index: 1;
+    height: fit-content;
+    width: fit-content;
+}
+
+.David,.Onesto{
+    color: blue;
+}
+
+.Frias{
+    position: relative;
+    top: -2rem;
+    left: 72rem;
+    z-index: 1;
+    height: fit-content;
+    width: fit-content;
+}
+
+.h1, h1{
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    color:azure !important; 
+}
+
+
+  /* ============== MEDIA QUERIES (MEDIUM DEVICES) ================== */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+/* ============== MEDIA QUERIES (SMALL DEVICES) ================== */
+
+@media screen and (max-width: 600px) {
+     .permalinks {
+       flex-direction: column;
+       gap: 1.5rem;
+     }
+
+     .footer__socials {
+       margin-bottom: 2.6rem;
+     }
+
+     .examen{
+       position: relative;
+       left: -0.1rem;
+       top: 2rem;
+       z-index: 1;
+   }
+
+ .Angel{
+   position: relative;
+   top: 3rem;
+   left: 2rem;
+   z-index: 1;
+
+}
+
+.David{
+   position: relative;
+   top: 3.2rem;
+   left: 3rem;
+   z-index: 1;
+
+}
+
+.Onesto{
+   position: relative;
+   top: 3.4rem;
+   left: 4rem;
+   z-index: 1;
+
+}
+
+.David,.Onesto{
+   color: blue;
+}
+
+.Frias{
+   position: relative;
+   top: -1.5rem;
+   left: 10rem;
+   z-index: 1;
+   rotate: 42deg;
+}
+}
